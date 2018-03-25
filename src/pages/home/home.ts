@@ -19,12 +19,12 @@ export class HomePage {
 
   ionViewWillEnter(){ // will fire off whenever the componenet is loaded
     this.location = {
-      city: 'Miama',
-      state: 'FL'
+      city: 'Merced',
+      state: 'CA'
     }
 
     this.weatherProvider.getweather(this.location.city, this.location.state).subscribe(weather => {
-      console.log(weather);
+      this.weather = weather["current_observation"];
     })
   } 
 
