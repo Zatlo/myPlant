@@ -2,15 +2,19 @@ page-welcome {
     
     #welcome{
         //background: color($colors, lightblue);
+        font-family: bookman;
         background-image: url('../assets/imgs/garden.jpg');
         background-size: 100%;
         h1{
-            font-size: 52px;
-            margin-top: 50px;
-            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: bookman;
+            font-size: 35px;
+            margin-top: 150px;
+            color: rgb(255, 255, 255);
         }
         div{
-            color: rgb(175, 253, 247);
+            text-align: center;
+            color: rgb(255, 255, 255);
             //padding: 25px;
         }
         .marginTop{
@@ -21,6 +25,11 @@ page-welcome {
         .marginBottom{
             border-radius: 50px;
         }
-        
+        .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            //width: 50%;
+        }
     }
     }
