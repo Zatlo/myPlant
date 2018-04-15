@@ -1,0 +1,26 @@
+page-welcome {
+    
+    #welcome{
+        //background: color($colors, lightblue);
+        background-image: url('../assets/imgs/garden.jpg');
+        background-size: 100%;
+        h1{
+            font-size: 52px;
+            margin-top: 50px;
+            color: rgb(0, 0, 0);
+        }
+        div{
+            color: rgb(175, 253, 247);
+            //padding: 25px;
+        }
+        .marginTop{
+            border-radius: 50px;
+            margin-top:  250px;
+            margin-bottom: 10px;
+        }
+        .marginBottom{
+            border-radius: 50px;
+        }
+        
+    }
+    }

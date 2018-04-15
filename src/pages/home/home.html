@@ -1,10 +1,24 @@
-<ion-header>
+<ion-header class = "backname">
+
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    
+    <h1 class="name">
+      <img ion-right src="assets/imgs/logo.png" class="navLogo"/>
+      <ion-title><b>Pocket Plants</b></ion-title>
+      <button ion-button class="logout" color="dark" (click)="logout()">Log Out</button>
+    </h1>
+
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
+<ion-header>
+
+
+</ion-header>
+
+<ion-content padding class = "whole">
+  <h1><b>Your Plants:</b></h1>
   <ion-grid *ngIf = "weather">
     <ion-row>
       <ion-col width-50 offset-25>
@@ -15,4 +29,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  <img padding class="gif" src="assets/imgs/tree.gif" width="50%" height="30%" />
+
+
 </ion-content>

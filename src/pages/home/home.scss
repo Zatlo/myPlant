@@ -1,3 +1,52 @@
 page-home {
 
+	text-align: center;
+
+ion-grid {
+}
+
+.logout{
+	border-radius: 20px;;
+}
+
+.gif{
+	text-align: center;
+	background-color: #32db64;
+	//border: 3px solid rgb(102, 245, 83);
+	border-radius: 100px;
+}
+
+.navLogo{
+	height:30px;
+	float: left;
+	margin-left: 5px;
+	padding-bottom: 3px;
+}
+
+.whole {
+	background-color: #63c6e4;
+	font-size: 10px
+}
+
+.backname {
+	background-color: #86C67C;
+}
+
+.name {
+	//border: 3px solid #73AD21;
+	//border-radius: 500px;
+	//background: #73AD21;
+	margin-top: 6px;
+
+}
+
+.location {
+	//border: 3px solid green;
+	font: 20px arial;
+	//border-radius: 600px;
+	//background: #73AD21;
+	//padding: 20px;
+	text-align: center;
+}
+
 }

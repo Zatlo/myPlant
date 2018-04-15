@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, App } from 'ionic-angular';
 import { WeatherProvider } from '../../providers/weather/weather'; // import our weatherprovider here
 
 @Component({
@@ -13,7 +13,7 @@ export class HomePage {
     state:string
   }
 
-  constructor(public navCtrl: NavController, private weatherProvider: WeatherProvider) { //inject our dependecy of weatherprovider
+  constructor(public navCtrl: NavController, public app: App, private weatherProvider: WeatherProvider) { //inject our dependecy of weatherprovider
 
   }
 
@@ -26,6 +26,12 @@ export class HomePage {
     this.weatherProvider.getweather(this.location.city, this.location.state).subscribe(weather => {
       this.weather = weather["current_observation"];
     })
-  } 
+  }
+
+  logout(){
+    //API Token
+    const root = this.app.getRootNav();
+    root.popToRoot();
+  }
 
 }
